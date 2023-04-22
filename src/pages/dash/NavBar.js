@@ -12,8 +12,8 @@ const Navbar = () => {
     <div className='navbar-wrapper'>
         <div className={`only-mobile mobile-option-menu ${(mobileMenuVisible)?"overlay":""}`}>
             <Navlink link="/" class="m-nb nb" name="Home"/>
-            <Navlink link="/" class="m-nb nb" name="Closet"/>
-            <Navlink link="/" class="m-nb nb" name="Lookbook"/>
+            <Navlink link="/closet?source=mobile_menu" class="m-nb nb" name="Closet"/>
+            <Navlink link="/lookbook?source=mobile_menu" class="m-nb nb" name="Lookbook"/>
             <Navlink link="/" class="m-nb nb" name="Calendar"/>
             <Navlink link="/" class="m-nb nb" name="Shop"/> 
         </div>
@@ -30,8 +30,8 @@ const Navbar = () => {
         
           <div className='nav'>
               <Navlink link="/" class="nb" name="Home"/>
-              <Navlink link="/" class="nb" name="Closet"/>
-              <Navlink link="/" class="nb" name="Lookbook"/>
+              <Navlink link="/dashboard/closet" class="nb" name="Closet"/>
+              <Navlink link="/dashboard/lookbook" class="nb" name="Lookbook"/>
               <Navlink link="/" class="nb" name="Calendar"/>
               <Navlink link="/" class="nb" name="Shop"/>
           </div>
