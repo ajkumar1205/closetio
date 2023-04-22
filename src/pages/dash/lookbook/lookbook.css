@@ -1,0 +1,39 @@
+.lb-avatar{
+    height: 100vh;
+    width: 100vw;
+}
+.Element{
+    position:absolute;
+    z-index: 2;
+    color: white;
+    /* margin: 0px auto; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Event_link{
+    text-align: center;
+    margin: 28px;
+    font-size: 23px;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 12px;
+}
+.Event_bar{
+    margin: 32px;
+}
+nav span.active {
+   /* border-bottom: 2px solid white; */
+   box-shadow: 0 0 5px hsla(0, 0%, 100%, 0.838);
+  }
+.text-rotator {
+    width: 200px;
+    overflow: hidden;
+  }
+  
+.text-slide {
+display: inline-block;
+transition: transform 0.5s ease-in-out;
+white-space: nowrap;
+}
