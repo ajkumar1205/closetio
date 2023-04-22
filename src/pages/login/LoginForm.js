@@ -3,13 +3,13 @@ import { useState } from 'react';
 import FormField from '../../components/FormField';
 import { Link } from 'react-router-dom';
 import Submit from '../../components/Submit';
-import AuthContext from '../../utils/UserProviderContext';
+// import AuthContext from '../../utils/UserProviderContext';
 
 const LoginForm = () => {
 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  let {loginUser} = useContext(AuthContext)
+  // let {loginUser} = useContext(AuthContext)
 
   function handleUsernameChange(event){
     setUsername(event.target.value);
@@ -34,7 +34,8 @@ const LoginForm = () => {
         </div>
         <FormField lable="Username" type="text" placeholder="Enter Username" handler={handleUsernameChange} value={username} name ="username"/>
         <FormField lable="Password" type="password" placeholder="Enter Password" handler={handlePasswordChange} value={password} name="password" />
-        <Submit clickHandler={loginUser}/>
+        {/* <Submit clickHandler={loginUser}/> */}
+        <Submit />
         <div className="det1">
             Haven't Registered Yet? <Link to='/signup'>Signup</Link>
         </div>

@@ -13,7 +13,7 @@ const AuthPage = () => {
             <Logo/>
             <LoginForm/>
         </div>
-        {/* <RightImage/> */}
+        <RightImage/>
     </div>
   )
 }
