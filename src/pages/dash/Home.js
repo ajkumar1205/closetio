@@ -8,7 +8,8 @@ const Home = () => {
     <div class="content">
             <PageHeader white="Welcome" gradient={name}/>
             {/* <div class="head">Welcome <span class ="hn"><span class ="as">Username !</span></span> !</div> */}
-            <div class="avatar"></div>
+              <img src='https://readyplayerme-photobooth.s3.amazonaws.com/644100ece0dd9597a1ebeee6/pTbXYF.jpeg' alt="avatar" className='avatar'/>
+            
     </div>
   )
 }

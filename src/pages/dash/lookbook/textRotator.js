@@ -3,8 +3,7 @@ import "./lookbook.css"
 import Spline from '@splinetool/react-spline';
 
 const textArray = [
-    'https://prod.spline.design/a7RVklDz3xdVRkma/scene.splinecode',
-    'https://my.spline.design/untitled-8da1d5d1fdd0a33085bad6ffc9a41652/'
+    'https://prod.spline.design/a7RVklDz3xdVRkma/scene.splinecode'
   ];
 
 const TextRotator = () => {
@@ -14,24 +13,22 @@ const TextRotator = () => {
         const timer = setTimeout(() => {
           setDirection(direction==='left');
           setCurrentSlide((currentSlide + 1) % textArray.length);
-        }, 1000);
+        }, 10000000);
         return () => clearTimeout(timer);
       }, [currentSlide]);
   return (
     <div>
         <div className="text-rotator">
           <div
-            className="text-slide"
-            style={{ transform: `translateX(${direction === 'left' ? '' : '-'}100%)` }}
+            className="text-slide lb-avatar"
+            style={{ transform: `translateX(${direction === 'left' ? '' : '-'}0%)` }}
             onAnimationEnd={() => setDirection('left')}
           >
             {/* {textArray[currentSlide]} */}
-            <Spline scene={textArray[currentSlide]} />
+            <Spline scene={textArray[0]} />
 
           </div>
          </div>
-         <div className='lb-avatar'>
-        </div>
     </div>
   )
 }

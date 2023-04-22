@@ -2,15 +2,16 @@
     height: 100vh;
     width: 100vw;
 }
-.Element{
-    position:absolute;
+.lookbook-container{
+    position: absolute;
     z-index: 2;
-    color: white;
-    /* margin: 0px auto; */
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+.Element{
+    color: white;
+    width: 100%;
 }
 .Event_link{
     text-align: center;
@@ -28,11 +29,13 @@ nav span.active {
    box-shadow: 0 0 5px hsla(0, 0%, 100%, 0.838);
   }
 .text-rotator {
-    width: 200px;
-    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
   }
   
 .text-slide {
+    height: 100vh;
 display: inline-block;
 transition: transform 0.5s ease-in-out;
 white-space: nowrap;
