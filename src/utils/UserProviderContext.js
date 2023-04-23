@@ -5,8 +5,11 @@ const AuthContext = createContext()
 export default AuthContext;
 
 export const AuthProvider=({children})=>{
+
+    const contextData = {name : "Guest"}
+
     return (
-        <AuthContext.Provider value={{'name':'Username'}}>
+        <AuthContext.Provider value={contextData}>
             {children}
         </AuthContext.Provider>
     )
