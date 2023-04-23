@@ -11,11 +11,12 @@ const Navbar = () => {
   return (
     <div className='navbar-wrapper'>
         <div className={`only-mobile mobile-option-menu ${(mobileMenuVisible)?"overlay":""}`}>
-            <Navlink link="/" class="m-nb nb" name="Home"/>
-            <Navlink link="/closet?source=mobile_menu" class="m-nb nb" name="Closet"/>
-            <Navlink link="/lookbook?source=mobile_menu" class="m-nb nb" name="Lookbook"/>
-            <Navlink link="/" class="m-nb nb" name="Calendar"/>
-            <Navlink link="/" class="m-nb nb" name="Shop"/> 
+            <Navlink link="/dashboard/" class="m-nb nb" name="Home"/>
+            <Navlink link="/dashboard/closet?source=mobile_menu" class="m-nb nb" name="Closet"/>
+            <Navlink link="/dashboard/lookbook?source=mobile_menu" class="m-nb nb" name="Lookbook"/>
+            <Navlink link="/dashboard/" class="m-nb nb" name="Shop"/> 
+            <Navlink link="/dashboard/about" class="m-nb nb" name="About"/>
+            <Navlink link="/" class="m-nb nb" name="Profile"/>
         </div>
         <div className='navbar'>
 
@@ -29,11 +30,12 @@ const Navbar = () => {
           </div>
         
           <div className='nav'>
-              <Navlink link="/" class="nb" name="Home"/>
+              <Navlink link="/dashboard/" class="nb" name="Home"/>
               <Navlink link="/dashboard/closet" class="nb" name="Closet"/>
               <Navlink link="/dashboard/lookbook" class="nb" name="Lookbook"/>
-              <Navlink link="/" class="nb" name="Calendar"/>
               <Navlink link="/" class="nb" name="Shop"/>
+              <Navlink link="/dashboard/about" class="nb" name="About"/>
+              <Navlink link="/" class="nb" name="Profile"/>
           </div>
         </div>
     </div>
