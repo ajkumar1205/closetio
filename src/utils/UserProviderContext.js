@@ -15,7 +15,7 @@ export const AuthProvider=({children})=>{
     const history = useHistory()
     let loginUser = async (e)=>{
         e.preventDefault()
-        let response = fetch('apilink',{
+        let response = fetch('http://closetio.pythonanywhere.com/api/user/',{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
@@ -42,7 +42,7 @@ export const AuthProvider=({children})=>{
 
     let updateToken = async ()=>{
         console.log('Update to')
-        let response = fetch('apilink',{
+        let response = fetch('http://closetio.pythonanywhere.com/api/user/refresh/',{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
