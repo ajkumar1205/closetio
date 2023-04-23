@@ -51,7 +51,11 @@
     padding:10px;
     justify-content: center;
   }
- 
+ .w1{
+    width: 80%;
+    margin: 0px auto;
+    text-align: justify;
+ }
 .beta1{
     width:100%;
     background-color: #CCE3E1;

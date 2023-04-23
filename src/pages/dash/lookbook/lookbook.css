@@ -33,9 +33,12 @@ nav span.active {
     height: 100vh;
     /* overflow: hidden; */
   }
-  
+.lb-containers{
+    background-color: #000000d1;
+}
 .text-slide {
     height: 100vh;
+    width: 100vw;
 display: inline-block;
 transition: transform 0.5s ease-in-out;
 white-space: nowrap;

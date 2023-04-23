@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState,useRef} from 'react'
 import "./lookbook.css"
 import TextRotator from './textRotator.js';
 import Navbar from '../NavBar';
@@ -19,9 +19,11 @@ import Navbar from '../NavBar';
   }
   function EventBar(){
     const [activeItem, setActiveItem] = useState('occasional');
+    
 
   const handleItemClick = (itemName) => {
     setActiveItem(itemName);
+    
   };
   return (
     <div className='lookbook-container'>
@@ -36,18 +38,18 @@ import Navbar from '../NavBar';
           <NavItem  itemName="official"  isActive={activeItem === 'official'}  onClick={handleItemClick}>
           Work Place
           </NavItem>
-        
+
       </nav>
     </div>
+    
   );
   }
 
 export default function Lookbook() {
 
 
-
   return (
-    <div className='containers'>
+    <div className='lb-containers'>
       <Navbar/>
         <div className='Element'>
         <EventBar/>

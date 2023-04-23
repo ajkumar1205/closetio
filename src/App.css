@@ -305,6 +305,11 @@ input{
       height: 150px;
     }
  }
+ @media screen and (max-width:740px) {
+    .img{
+      display: none;
+    }
+ }
  @media screen and (max-width:768px) {
   .logo{
       font-size: 22px;
