@@ -12,10 +12,10 @@ const Navbar = () => {
     <div className='navbar-wrapper'>
         <div className={`only-mobile mobile-option-menu ${(mobileMenuVisible)?"overlay":""}`}>
             <Navlink link="/dashboard/" class="m-nb nb" name="Home"/>
-            <Navlink link="/closet?source=mobile_menu" class="m-nb nb" name="Closet"/>
-            <Navlink link="/lookbook?source=mobile_menu" class="m-nb nb" name="Lookbook"/>
-            <Navlink link="/" class="m-nb nb" name="Shop"/> 
-            <Navlink link="/" class="m-nb nb" name="About"/>
+            <Navlink link="/dashboard/closet?source=mobile_menu" class="m-nb nb" name="Closet"/>
+            <Navlink link="/dashboard/lookbook?source=mobile_menu" class="m-nb nb" name="Lookbook"/>
+            <Navlink link="/dashboard/" class="m-nb nb" name="Shop"/> 
+            <Navlink link="/dashboard/about" class="m-nb nb" name="About"/>
             <Navlink link="/" class="m-nb nb" name="Profile"/>
         </div>
         <div className='navbar'>
@@ -34,7 +34,7 @@ const Navbar = () => {
               <Navlink link="/dashboard/closet" class="nb" name="Closet"/>
               <Navlink link="/dashboard/lookbook" class="nb" name="Lookbook"/>
               <Navlink link="/" class="nb" name="Shop"/>
-              <Navlink link="https://c-about.netlify.app/" class="nb" name="About"/>
+              <Navlink link="/dashboard/about" class="nb" name="About"/>
               <Navlink link="/" class="nb" name="Profile"/>
           </div>
         </div>

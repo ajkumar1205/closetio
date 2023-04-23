@@ -8,6 +8,7 @@ import DashBoardPage from './pages/dash/DashBoardPage';
 import Home from './pages/dash/Home';
 import Closet from './pages/dash/closet/closet';
 import Lookbook from './pages/dash/lookbook/lookbook';
+import About from './pages/dash/about/about';
 
 function App() {
   return (
@@ -17,9 +18,9 @@ function App() {
         <Routes>
           <Route exact path='/' element={<LaunchPage/>} />
           <Route path='/dashboard' element={<DashBoardPage/>} />
-          {/* <Route path='/dashboard/' element={<Home/>} /> */}
          <Route path='/dashboard/closet' element={<Closet/>} />
           <Route path='/dashboard/lookbook' element={<Lookbook/>} />
+          <Route path='/dashboard/about' element={<About/>} />
           <Route path='/login' element={<LoginPage/>} />
           <Route path='/signup' element={<SignUpPage/>} />
         </Routes>
