@@ -1,6 +1,7 @@
-import React, {useState} from 'react'
+import React, {useState,useRef} from 'react'
 import "./lookbook.css"
-import TextRotator from './textRotator';
+import TextRotator from './textRotator.js';
+import Navbar from '../NavBar';
 
 
   function NavItem({itemName,isActive,onClick, children}){
@@ -18,32 +19,38 @@ import TextRotator from './textRotator';
   }
   function EventBar(){
     const [activeItem, setActiveItem] = useState('occasional');
+    
 
   const handleItemClick = (itemName) => {
     setActiveItem(itemName);
+    
   };
   return (
-    <nav className='Event_bar'>
-        <NavItem itemName="occasional" isActive={activeItem === 'occasional'} onClick={handleItemClick}>
-          Occasional Wear
-        </NavItem>
-        <NavItem itemName="casuals"  isActive={activeItem === 'casuals'}  onClick={handleItemClick}>
-          Casuals Wear
-        </NavItem>
-        <NavItem  itemName="official"  isActive={activeItem === 'official'}  onClick={handleItemClick}>
-         Work Place
-        </NavItem>
-      
-    </nav>
+    <div className='lookbook-container'>
+      {/* <Navbar/> */}
+      <nav className='Event_bar'>
+          <NavItem itemName="occasional" isActive={activeItem === 'occasional'} onClick={handleItemClick}>
+            Occasional Wear
+          </NavItem>
+          <NavItem itemName="casuals"  isActive={activeItem === 'casuals'}  onClick={handleItemClick}>
+            Casuals Wear
+          </NavItem>
+          <NavItem  itemName="official"  isActive={activeItem === 'official'}  onClick={handleItemClick}>
+          Work Place
+          </NavItem>
+
+      </nav>
+    </div>
+    
   );
   }
 
 export default function Lookbook() {
 
 
-
   return (
-    <div>
+    <div className='lb-containers'>
+      <Navbar/>
         <div className='Element'>
         <EventBar/>
         <TextRotator/>
